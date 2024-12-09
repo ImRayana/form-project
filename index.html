@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="loud.png" alt="gromkogovoritel">
+    <form>
+        <div class="space-y-12">
+            <div class="border-b border-gray-900/10 pb-12">
+                <h2 class="text-2xl/7 font-semibold text-[#631E33]">Profile</h2>
+                <p class="mt-1 text-xl/6 text-[#902042]">This information will be displayed publicly so be careful what you share.</p>
+            </div>
+      
+            <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                <div class="sm:col-span-3">
+                    <label for="first-name" class="block text-xl/6 font-medium text-[#902042]">First name*</label>
+                    <div class="mt-2">
+                      <input type="text" name="first-name" id="first-name" autocomplete="given-name" minlength="2" required class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-[#000000] sm:text-sm/6">
+                    </div>
+                </div>
+
+      
+                <div class="sm:col-span-3">
+                  <label for="last-name" class="block text-xl/6 font-medium text-[#902042]">Last name*</label>
+                  <div class="mt-2">
+                    <input type="text" name="last-name" id="last-name" required minlength="2" autocomplete="family-name" class="block w-full rounded-md bg-white px-[20px] py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-[#000000] sm:text-sm/6">
+                  </div>
+                </div>  
+
+
+                <div class="col-span-full">
+                    <label for="about" class="block text-xl/6 font-medium text-[#902042]">About*</label>
+                    <div class="mt-2">
+                      <textarea name="about" id="about" rows="3" required minlength="5" maxlength="200" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-[#000000] sm:text-sm/6"></textarea>
+                    </div>
+                    <p class="mt-3 text-sm/6 text-[#902042]">Write a few sentences about yourself.</p>
+                </div>
+            </div>
+        </div>
+      
+        <div class="mt-6 flex items-center justify-center gap-x-6">
+          <button type="button" class="text-2xl/6 font-semibold text-[#902042]">Cancel</button>
+          <button type="submit" class="rounded-md bg-[#902042] px-3 py-2 text-2xl font-semibold text-white shadow-sm hover:bg-[#000000] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#000000]">Save</button>
+        </div>
+    </form>
+</body>
+</html>
