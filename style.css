@@ -3,14 +3,32 @@
 }
 
 body {
+    position: relative;
     background-image: url(cloud.png);
     background-size: cover;
     background-color: white;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .space-y-12 {
     width: 40vw;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    width: 100vw;
+    height: 8vh;
+    position: fixed;
+}
+
+nav {
+    height: 55px;
 }
